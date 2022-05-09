@@ -1,0 +1,99 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.img-container img {
+  width: 140%;
+  height: auto;
+  transform: translate(-0.5rem, 3rem);
+}
+
+.body-text {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  width: 40rem;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  color: hsl(0, 0%, 98%);
+  padding: 0.4rem 1.2rem;
+  display: inline-block;
+  border-radius: 2rem;
+  background-color: hsl(230, 29%, 20%);
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+}
+
+.small-para {
+  text-transform: uppercase;
+  margin-left: 1rem;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 0.3rem;
+}
+
+.heading {
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 25rem;
+  font-size: 1.5rem;
+  color: hsl(231, 7%, 65%);
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: hsl(207, 33%, 95%);
+  background-color: hsl(0, 100%, 68%);
+}
+
+.btn-primary:hover {
+  background-color: hsla(0, 100%, 68%, 0.7);
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    flex-direction: column-reverse;
+  }
+
+  .img-container,
+  .body-text {
+    width: 100%;
+  }
+
+  .body-text {
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .row-container {
+    width: 100%;
+  }
+}

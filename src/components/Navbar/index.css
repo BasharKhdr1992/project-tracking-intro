@@ -1,0 +1,69 @@
+.navbar {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.navlink {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: hsl(230, 29%, 20%);
+  text-transform: uppercase;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.login {
+  color: hsl(231, 7%, 65%);
+}
+
+.navbar-divider {
+  display: flex;
+  align-items: center;
+  display: block;
+  padding: 0 0.8rem 1.7rem 0.8rem;
+  color: hsl(231, 7%, 65%);
+  font-size: 3rem;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+}
+
+.mobile {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 2rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .collapse {
+    display: none;
+  }
+}
